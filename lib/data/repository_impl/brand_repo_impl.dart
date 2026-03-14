@@ -4,12 +4,12 @@ import 'package:ecommerce_app_flutter/domain/repository/brand_repository.dart';
 
 class BrandRepoImpl implements BrandRepository{
 
-  final BrandRemoteDataSource brandRemoteDataSource;
+  final BrandRemoteDataSource remoteDataSource;
 
-  BrandRepoImpl({required this.brandRemoteDataSource});
+  BrandRepoImpl({required this.remoteDataSource});
   @override
   Future<List<Brand>> getBrand() {
-    return brandRemoteDataSource.fetchBrands();
+    return remoteDataSource.fetchBrands();
   }
 
 }
