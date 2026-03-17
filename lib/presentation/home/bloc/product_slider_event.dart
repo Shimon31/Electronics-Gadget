@@ -8,7 +8,6 @@ abstract class ProductSliderEvent extends Equatable{
   List<Object?> get props => [];
 
 }
-
 class ProductSliderRequested extends ProductSliderEvent{
   const ProductSliderRequested();
 }
