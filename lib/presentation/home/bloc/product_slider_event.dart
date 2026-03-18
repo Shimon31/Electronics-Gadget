@@ -4,6 +4,8 @@ abstract class ProductSliderEvent extends Equatable{
 
   const ProductSliderEvent();
 
+
+
   @override
   List<Object?> get props => [];
 
